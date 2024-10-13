@@ -63,6 +63,6 @@ PSX.Dev-README.md
 *.a
 third_party/psyq
 third_party/ 
-# why isn't this the default?
+# guess only psyq gets excluded
 
 .vscode/
