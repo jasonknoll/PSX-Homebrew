@@ -52,3 +52,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+PSX.Dev-README.md
+*.elf
+*.map
+*.cpe
+*.ps-exe
+*.dep
+*.o
+*.a
+third_party/psyq
+third_party/ 
+# why isn't this the default?
+
+.vscode/
