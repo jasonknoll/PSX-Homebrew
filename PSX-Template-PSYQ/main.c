@@ -1,3 +1,4 @@
+// Basic imports
 #include <libetc.h>
 #include <libgpu.h>
 #include <libgte.h>
@@ -123,6 +124,5 @@ int main(void) {
         FntFlush(-1);
     }
 
-    int jasdf = 1;
     return 0;
 }

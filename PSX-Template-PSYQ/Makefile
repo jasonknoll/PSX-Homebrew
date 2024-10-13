@@ -1,4 +1,4 @@
-TARGET = test
+TARGET = PSX-Template-PSYQ
 TYPE = ps-exe
 
 SRCS = \
