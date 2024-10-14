@@ -1,4 +1,3 @@
-// Basic imports
 #include <libetc.h>
 #include <libgpu.h>
 #include <libgte.h>
