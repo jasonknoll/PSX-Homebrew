@@ -39,6 +39,10 @@ void HelloAppScene::frame() {
     psyqo::Prim::Rectangle rect1;
     psyqo::Prim::Rectangle rect2;
 
+    //rect1.position =
+    //rect1.size = 
+    //rect1.color =  
+
     uint8_t blue = gpu().getFrameCount() % 255;
 
     psyqo::Color backgroundColor = {{.r = 0, .g = 100, .b = blue}};
