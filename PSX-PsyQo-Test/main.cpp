@@ -5,6 +5,7 @@
 #include "third_party/nugget/psyqo/font.hh"
 #include "third_party/nugget/psyqo/gpu.hh"
 #include "third_party/nugget/psyqo/scene.hh"
+#include "third_party/nugget/psyqo/primitives/rectangles.hh"
 
 
 class App : public psyqo::Application {
@@ -34,8 +35,14 @@ void App::createScene() {
 }
 
 void HelloAppScene::frame() {
-    psyqo::Color c = {{.r = 0, .g = 0, .b = uint8_t(gpu().getFrameCount() % 255)}};
-    gpu().clear(c);
+    // TODO add a shape or two
+    psyqo::Prim::Rectangle rect1;
+    psyqo::Prim::Rectangle rect2;
+
+    uint8_t blue = gpu().getFrameCount() % 255;
+
+    psyqo::Color backgroundColor = {{.r = 0, .g = 100, .b = blue}};
+    gpu().clear(backgroundColor);
 }
 
 int main() { 
