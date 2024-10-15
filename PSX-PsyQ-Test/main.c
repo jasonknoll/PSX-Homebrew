@@ -1,6 +1,8 @@
 #include <libetc.h>
 #include <libgpu.h>
 #include <libgte.h>
+#include <kernel.h>
+
 #include <stdlib.h>
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof(*(a)))
@@ -8,6 +10,9 @@
 #define OTSIZE 4096
 #define SCREEN_Z 512
 #define CUBESIZE 196
+
+unsigned long __ramsize = 0x00200000; // 2 MB
+unsigned long __stacksize = 0x00004000; // 16 KB
 
 typedef struct DB {
     DRAWENV draw;
@@ -56,7 +61,7 @@ static void add_cube(u_long *ot, POLY_F4 *s, MATRIX *transform) {
 }
 
 int main(void) {
-    DB db[2];
+    DB db[2]; // double buffer 
     DB *cdb;
     SVECTOR rotation = {0};
     VECTOR translation = {0, 0, (SCREEN_Z * 3) / 2, 0};
@@ -97,7 +102,7 @@ int main(void) {
     PutDispEnv(&db[0].disp);
 
     while (1) {
-        cdb = (cdb == &db[0]) ? &db[1] : &db[0];
+        cdb = (cdb == &db[0]) ? &db[1] : &db[0]; // buffer switching
 
         rotation.vy += 16;
         rotation.vz += 16;
