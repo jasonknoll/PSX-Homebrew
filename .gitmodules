@@ -1,3 +1,9 @@
 [submodule "Projects/PSX-PsyQ-Learn-LibGPU"]
 	path = Projects/PSX-PsyQ-Learn-LibGPU
 	url = https://github.com/jasonknoll/PSX-PsyQ-Learn-LibGPU
+[submodule "Templates/PSX-PsyQ-Template"]
+	path = Templates/PSX-PsyQ-Template
+	url = https://github.com/jasonknoll/PSX-PsyQ-Template
+[submodule "Templates/PSX-PsyQo-Template"]
+	path = Templates/PSX-PsyQo-Template
+	url = https://github.com/jasonknoll/PSX-PsyQo-Template
