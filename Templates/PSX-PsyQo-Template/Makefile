@@ -1,4 +1,4 @@
-TARGET = PSX-PsyQo-Test
+TARGET = PSX-PsyQo-Template
 TYPE = ps-exe
 
 SRCS = \
