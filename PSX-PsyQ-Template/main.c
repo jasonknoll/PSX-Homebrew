@@ -1,9 +1,9 @@
 #include <libetc.h>
 #include <libgpu.h>
 #include <libgte.h>
-#include <kernel.h>
-
 #include <stdlib.h>
+
+// Cube example
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof(*(a)))
 
@@ -61,8 +61,8 @@ static void add_cube(u_long *ot, POLY_F4 *s, MATRIX *transform) {
 }
 
 int main(void) {
-    DB db[2]; // double buffer 
-    DB *cdb;
+    DB db[2]; // double draw-buffer setup
+    DB *cdb; // current draw-buffer (?)
     SVECTOR rotation = {0};
     VECTOR translation = {0, 0, (SCREEN_Z * 3) / 2, 0};
     MATRIX transform;
