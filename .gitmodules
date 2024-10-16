@@ -1,0 +1,3 @@
+[submodule "Projects/learn-libgpu"]
+	path = Projects/learn-libgpu
+	url = https://github.com/jasonknoll/PSX-PsyQ-Learn-LibGPU
