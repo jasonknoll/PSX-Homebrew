@@ -1,4 +1,4 @@
-TARGET = PSX-PsyQ-Test
+TARGET = PSX-PsyQ-Learn-LibGPU
 TYPE = ps-exe
 
 SRCS = \
