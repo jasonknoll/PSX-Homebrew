@@ -7,3 +7,6 @@
 [submodule "Templates/PSX-PsyQo-Template"]
 	path = Templates/PSX-PsyQo-Template
 	url = https://github.com/jasonknoll/PSX-PsyQo-Template
+[submodule "Projects/PSX-PsyQo-Learn-GPU"]
+	path = Projects/PSX-PsyQo-Learn-GPU
+	url = https://github.com/jasonknoll/PSX-PsyQo-Learn-GPU
