@@ -10,3 +10,6 @@
 [submodule "Projects/PSX-PsyQo-Learn-GPU"]
 	path = Projects/PSX-PsyQo-Learn-GPU
 	url = https://github.com/jasonknoll/PSX-PsyQo-Learn-GPU
+[submodule "Projects/Lame-Jame-44"]
+	path = Projects/Lame-Jame-44
+	url = https://github.com/jasonknoll/Lame-Jam-44
