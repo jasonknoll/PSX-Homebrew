@@ -13,3 +13,6 @@
 [submodule "Projects/Lame-Jame-44"]
 	path = Projects/Lame-Jame-44
 	url = https://github.com/jasonknoll/Lame-Jam-44
+[submodule "Projects/PSX-Pong"]
+	path = Projects/PSX-Pong
+	url = https://github.com/jasonknoll/PSX-Pong
